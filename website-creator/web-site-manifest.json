@@ -1,0 +1,11 @@
+{
+    "files": [
+        "./phoneNumber.html",
+        "./css/style.css",
+        "./js/aws-sdk-phonenumber.js",
+	"./js/phonenumber.js",
+	"./js/amazon-cognito-identity.min.js",
+	"./js/aws-cognito-helper.js",
+	"./js/aws-cognito-sdk.min.js"
+    ]
+}

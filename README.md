@@ -1,17 +1,16 @@
-## My Project
 
-TODO: Fill this README out!
+# Amazon Connect phone number API demo  
 
-Be sure to:
+This demo shows how you can leverage [Amazon Connect](https://aws.amazon.com/connect/) api to search user's by different techniques.  
 
-* Change the title in this README
-* Edit your repository description on GitHub
+## Usage
+Use `sam` to build, invoke and deploy the function.
 
-## Security
+##### SAM Build:
+Ensure you are in the root folder
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+`sam build --use-container`
 
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+##### SAM Deploy:
+`sam deploy template.yaml --s3-bucket REPLACE_ME --stack-name REPLACE_ME --parameter-overrides ParameterKey=CFS3BucketForWebSite,ParameterValue=REPLACE_ME ParameterKey=CFSInstanceARNParam,ParameterValue=REPLACE_ME_WITH_FULL_INSTANCE_ARN --capabilities CAPABILITY_IAM`
+      
